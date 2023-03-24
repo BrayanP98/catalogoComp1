@@ -17,6 +17,14 @@
 
 },
 {
+    "categoria":"papeleria",
+   "nombre":"cinta aislante",
+   "valor":"120.000",
+   "descripcion":"esta muy buena",
+   "img":"imagenes_competidor/producto7.png"
+
+},
+{
     "categoria":"ferreteria",
    "nombre":"cinta aislante",
    "valor":"120.000",
