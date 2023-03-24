@@ -44,16 +44,19 @@
                         var descrip = document.createElement("div");
                         descrip.id="descrip"
                         var p = document.createElement("p");
+                        var valor = document.createElement("a");
                         var buton = document.createElement("a");
                         buton.id="whatsapp";
                         buton.setAttribute('target',"_blank");
-                        
+                        valor.id="precio"
                         var pText = document.createTextNode(item.nombre);
+                        valor.innerHTML= item.valor
                         buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         buton.innerHTML="Whatsapp"
                         p.appendChild(pText);
                         descrip.appendChild(p);
-                        descrip.appendChild(buton);
+                        descrip.appendChild(valor);
+                        descrip.appendChild(buton); 
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
                         
@@ -68,16 +71,19 @@
                         var descrip = document.createElement("div");
                         descrip.id="descrip"
                         var p = document.createElement("p");
+                        var valor = document.createElement("a");
                         var buton = document.createElement("a");
                         buton.id="whatsapp";
                         buton.setAttribute('target',"_blank");
-                        
+                        valor.id="precio"
                         var pText = document.createTextNode(item.nombre);
+                        valor.innerHTML= item.valor
                         buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         buton.innerHTML="Whatsapp"
                         p.appendChild(pText);
                         descrip.appendChild(p);
-                        descrip.appendChild(buton);
+                        descrip.appendChild(valor);
+                        descrip.appendChild(buton); 
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
                         
@@ -92,16 +98,19 @@
                         var descrip = document.createElement("div");
                         descrip.id="descrip"
                         var p = document.createElement("p");
+                        var valor = document.createElement("a");
                         var buton = document.createElement("a");
                         buton.id="whatsapp";
                         buton.setAttribute('target',"_blank");
-                        
+                        valor.id="precio"
                         var pText = document.createTextNode(item.nombre);
+                        valor.innerHTML= item.valor
                         buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         buton.innerHTML="Whatsapp"
                         p.appendChild(pText);
                         descrip.appendChild(p);
-                        descrip.appendChild(buton);
+                        descrip.appendChild(valor);
+                        descrip.appendChild(buton); 
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
                         
