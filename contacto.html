@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="caja">
+
+        <h1 class="logo"><img src="img/logo.png" alt=""></h1>
+        <nav>
+            <ul>
+                <li ><a href="index.html">HOME</a></li>        
+                <li><a href="index.html">PRODUCTO</a></li>
+                <li><a href="index.html">CONTACTO</a></li>
+             </ul>
+    </nav>
+
+</div>
+    </header>
+
+    <main>
+
+        <form action=""  class="formulario">
+
+            <label for="nombre">Nombre*</label>
+            <input type="text"  id="nombre" required>
+
+            <label for="email">email*</label>
+            <input type="email"  id="email" placeholder="email@dominio.com" required>   
+
+            <label for="contacto">contacto*</label>
+
+            <input type="tel"  id="contacto" required>
+
+            <label for="mensaje">mensaje</label>
+            <textarea name="" id="mensaje" cols="68" rows="10"></textarea>
+
+        <fieldset class="contact-type">
+            <legend> como quiere ser contactadp?</legend>
+            <label for="radio-email"> <input type="radio" id="radio-email"   name="contacto-radio" value="email"  checked >Email  </label>
+           
+
+            <label for="radio-telefono"> <input type="radio" id="radio-telefono" name="contacto-radio" value="telefono" >Telefono</label>
+            
+
+            <label for="radio-Whatsapp"><input type="radio" id="radio-Whatsapp" name="contacto-radio" value="telefono">Whatsapp</label>
+            
+        </fieldset >
+
+        <label class="checkbox" for="info"  > <input type="checkbox"  id="info" checked>le gustaria recivir informacion sobre nosotros ?</label>
+
+     <div class="select-horario">
+        <p> en que horario dese seer atendido?</p>
+        <select name="" id="" >
+
+            <option value="">mañana</option>
+           <option value="">tarde</option>
+           <option value="">mnoche</option>
+        </select>
+
+    </div>
+            <input type="submit" class="btn-enviar" value="envier formulario">
+        </form> 
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>8-12</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>8-5</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>8-6</td>
+                </tr>
+            </tbody>
+            
+           
+
+        </table>
+    </main>
+    
+</body>
+</html>

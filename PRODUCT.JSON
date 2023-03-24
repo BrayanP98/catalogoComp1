@@ -1,0 +1,34 @@
+[
+{
+
+    "categoria":"hogar",
+    "nombre":"cinta enmascarar",
+    "valor":"120.000",
+    "descripcion":"esta muy buena",
+    "img":"imagenes_competidor/producto1.png"
+
+},
+{
+    "categoria":"papeleria",
+   "nombre":"cinta aislante",
+   "valor":"120.000",
+   "descripcion":"esta muy buena",
+   "img":"imagenes_competidor/producto3.png"
+
+},
+{
+    "categoria":"ferreteria",
+   "nombre":"cinta aislante",
+   "valor":"120.000",
+   "descripcion":"esta muy buena",
+   "img":"imagenes_competidor/producto6.png"
+
+}
+
+
+
+
+
+
+
+]

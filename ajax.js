@@ -1,0 +1,128 @@
+//fetch('http://localhost/mi%20primera%20pagina/PRODUCT.JSON')
+    //.then((response) => response.json())
+   // .then((json) => console.log(json));
+    
+    
+ 
+    function traerDatos(){
+
+        console.log("en la funcion")
+        const xhttp=new XMLHttpRequest();
+        xhttp.open('GET', 'PRODUCT.JSON', true);
+        xhttp.send();
+        xhttp.onreadystatechange= function(){
+            if(this.readyState== 4 && this.status == 200){
+    
+              
+
+                let datos= JSON.parse(this.responseText)
+               
+
+                for(let item of datos){
+                   // for( var i=0; i<2;i++){
+
+                 //  for( var i=0; i<11;i++){
+    
+
+                    var seccion_hogar= document.getElementById("hogar");
+                    var seccion_papeleria= document.getElementById("papeleria");
+                    var seccion_ferreteria= document.getElementById("ferreteria");
+                   // var hoja= document.getElementById("hogar");
+                    var cardProd = document.createElement("div");
+                    cardProd.id="producto";
+                    cardProd.className="producto";
+                    
+                    var imagen = document.createElement("img");
+                    imagen.id="imagen";
+                         
+
+                    if(item.categoria=="hogar"){
+
+                        imagen.setAttribute('src',item.img);
+                        
+                    
+                        var descrip = document.createElement("div");
+                        descrip.id="descrip"
+                        var p = document.createElement("p");
+                        var buton = document.createElement("a");
+                        buton.id="whatsapp";
+                        buton.setAttribute('target',"_blank");
+                        
+                        var pText = document.createTextNode(item.nombre);
+                        buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
+                        buton.innerHTML="Whatsapp"
+                        p.appendChild(pText);
+                        descrip.appendChild(p);
+                        descrip.appendChild(buton);
+                        cardProd.appendChild(imagen);
+                        cardProd.appendChild(descrip);
+                        
+                    
+                        seccion_hogar.appendChild(cardProd);
+                    }
+                    if(item.categoria=="papeleria" ){
+
+                        imagen.setAttribute('src',item.img);
+                        
+                    
+                        var descrip = document.createElement("div");
+                        descrip.id="descrip"
+                        var p = document.createElement("p");
+                        var buton = document.createElement("a");
+                        buton.id="whatsapp";
+                        buton.setAttribute('target',"_blank");
+                        
+                        var pText = document.createTextNode(item.nombre);
+                        buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
+                        buton.innerHTML="Whatsapp"
+                        p.appendChild(pText);
+                        descrip.appendChild(p);
+                        descrip.appendChild(buton);
+                        cardProd.appendChild(imagen);
+                        cardProd.appendChild(descrip);
+                        
+                    
+                        seccion_papeleria.appendChild(cardProd);
+                    }
+                    if(item.categoria=="ferreteria" ){
+
+                        imagen.setAttribute('src',item.img);
+                        
+                    
+                        var descrip = document.createElement("div");
+                        descrip.id="descrip"
+                        var p = document.createElement("p");
+                        var buton = document.createElement("a");
+                        buton.id="whatsapp";
+                        buton.setAttribute('target',"_blank");
+                        
+                        var pText = document.createTextNode(item.nombre);
+                        buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
+                        buton.innerHTML="Whatsapp"
+                        p.appendChild(pText);
+                        descrip.appendChild(p);
+                        descrip.appendChild(buton);
+                        cardProd.appendChild(imagen);
+                        cardProd.appendChild(descrip);
+                        
+                    
+                        seccion_ferreteria.appendChild(cardProd);
+                    }
+                       
+                    // var nom_prod="producto"+i;
+                    // nombre(nom_prod)
+                   
+                  // }
+                    }
+               // }
+            }
+    
+        }
+       }
+       traerDatos() 
+    
+    
+
+
+
+    
