@@ -2,7 +2,7 @@
     //.then((response) => response.json())
    // .then((json) => console.log(json));
     
-    
+  
  
     function traerDatos(){
 
@@ -49,13 +49,13 @@
                         descrip.id="descrip"
                         var p = document.createElement("p");
                         var valor = document.createElement("a");
-                        var buton = document.createElement("a");
+                        var buton = document.createElement("button");
                         buton.id="whatsapp";
                         buton.setAttribute('target',"_blank");
                         valor.id="precio"
                         var pText = document.createTextNode(item.nombre);
                         valor.innerHTML= item.valor
-                        buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
+                       // buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         buton.innerHTML="Whatsapp"
                         p.appendChild(pText);
                         descrip.appendChild(p);
@@ -63,7 +63,13 @@
                         descrip.appendChild(buton); 
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
-                        
+                        buton.onclick= function(){
+                            
+                            document.querySelector("#pop-up").classList.add("active")
+
+                            document.querySelector("#image_prod").setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
+                           esconder()
+                    }
                     
                         seccion_hogar.appendChild(cardProd);
                     }
@@ -76,13 +82,13 @@
                         descrip.id="descrip"
                         var p = document.createElement("p");
                         var valor = document.createElement("a");
-                        var buton = document.createElement("a");
+                        var buton = document.createElement("button");
                         buton.id="whatsapp";
                         buton.setAttribute('target',"_blank");
                         valor.id="precio"
                         var pText = document.createTextNode(item.nombre);
                         valor.innerHTML= item.valor
-                        buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
+                     //   buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         buton.innerHTML="Whatsapp"
                         p.appendChild(pText);
                         descrip.appendChild(p);
@@ -90,7 +96,12 @@
                         descrip.appendChild(buton); 
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
-                        
+                        buton.onclick= function(){
+
+                            document.querySelector("#pop-up").classList("active")
+
+                            document.querySelector("#image_prod").setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
+                    }
                     
                         seccion_papeleria.appendChild(cardProd);
                     }
@@ -103,13 +114,13 @@
                         descrip.id="descrip"
                         var p = document.createElement("p");
                         var valor = document.createElement("a");
-                        var buton = document.createElement("a");
+                        var buton = document.createElement("button");
                         buton.id="whatsapp";
                         buton.setAttribute('target',"_blank");
                         valor.id="precio"
                         var pText = document.createTextNode(item.nombre);
                         valor.innerHTML= item.valor
-                        buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
+                        //buton.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         buton.innerHTML="Whatsapp"
                         p.appendChild(pText);
                         descrip.appendChild(p);
@@ -118,7 +129,13 @@
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
                         
-                    
+                        buton.onclick= function(){
+
+                                document.querySelector("#pop-up").classList.toggle("active")
+
+                                document.querySelector("#image_prod").setAttribute('src',img.cardProd)
+
+                        }
                         seccion_ferreteria.appendChild(cardProd);
                     }
                        
@@ -133,6 +150,25 @@
         }
        }
        traerDatos() 
+
+      // document.querySelector("#pop-up").addEventListener("mouseup",function(){
+
+      //  this.classList.toggle('active');
+        
+    
+   // });
+   
+   
+   
+    
+        
+
+
+
+     
+     
+
+      
     
     
 
