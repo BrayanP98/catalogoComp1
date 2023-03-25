@@ -151,12 +151,12 @@
        }
        traerDatos() 
 
-      // document.querySelector("#pop-up").addEventListener("mouseup",function(){
+       document.querySelector("#close_view").addEventListener("click",function(){
 
-      //  this.classList.toggle('active');
+        document.querySelector("#pop-up").classList.toggle("active")
         
     
-   // });
+   });
    
    
    
