@@ -38,7 +38,7 @@
 
                     if(item.categoria=="hogar"){
 
-                        imagen.setAttribute('src',item.img);
+                        imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
                         
                     
                         var descrip = document.createElement("div");
@@ -65,7 +65,7 @@
                     }
                     if(item.categoria=="papeleria" ){
 
-                        imagen.setAttribute('src',item.img);
+                        imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
                         
                     
                         var descrip = document.createElement("div");
@@ -92,7 +92,7 @@
                     }
                     if(item.categoria=="ferreteria" ){
 
-                        imagen.setAttribute('src',item.img);
+                        imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
                         
                     
                         var descrip = document.createElement("div");
