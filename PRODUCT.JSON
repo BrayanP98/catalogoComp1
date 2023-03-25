@@ -31,8 +31,21 @@
    "descripcion":"esta muy buena",
    "img":"imagenes_competidor/producto6.png"
 
+},
+{
+    "categoria":"varios",
+   "nombre":"aceite_maquina_grande",
+   "valor":"120.000",
+   "descripcion":"esta muy buena"
+   
+},
+{
+    "categoria":"varios",
+   "nombre":"aceite_maquina_pequeño",
+   "valor":"120.000",
+   "descripcion":"esta muy buena"
+   
 }
-
 
 
 

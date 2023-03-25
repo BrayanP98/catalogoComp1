@@ -1,4 +1,7 @@
+body{
 
+    overflow-x: hidden;
+}
 h2,p{
 
     text-align: center;
@@ -55,23 +58,34 @@ header{
   
 
     background-color: yellowgreen;
-    height: 80px;
+    height: 50px;
+    align-items: center;
 }
 
-nav li{
 
-    margin-left: 10%;
-    display: inline;
-}
 
 .caja nav {
+    font-size: 20px;
     position: absolute;
     display: inline-block;
-    background-color: rgb(12, 77, 97);
+   
     right: 30%;
     vertical-align: top;
     width: 70%;
-    top:10px
+    height: 50px;
+    top:10px;
+   
+    padding: 5px;
+}
+.caja nav li{
+    
+    border: 2px  solid #c21117;
+    margin-left: 10%;
+    display: inline;
+}
+.caja nav li a{
+text-decoration: none;
+
 }
 .caja{
     width: 95%;
@@ -88,6 +102,10 @@ nav li{
     color: blue;
     height: 950px;
 }
+#items{
+width: 100vw;
+
+}
 #items h1{
     font-size: 40px;
     margin-top: 20px;
@@ -99,10 +117,11 @@ nav li{
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
- 
-  gap: 15px;
-  padding: 10px;
-  margin-top: 50px;
+   margin-left: 20px;
+  gap: 10px;
+  padding: 5px;
+  margin-top: 20px;
+  justify-content: center;
 
 }
 
@@ -115,7 +134,7 @@ nav li{
     background-repeat: round;
     width: 150px;
     height: fit-content;
-    margin-top: 45px;
+    margin-top: 10px;
     box-shadow: 0px 0px 1px 1px   rgb(165, 44, 44);
     
     border-radius: 5px;
@@ -127,7 +146,7 @@ nav li{
   width: 100%;
   height: 150px;
   border-radius: 5px;
-  box-shadow: 0px 0px 1px 1px   rgb(165, 44, 44);
+ 
 
     
 }
@@ -147,44 +166,135 @@ nav li{
    margin-top: -13%;
     width: 150px;
     height: fit-content;
-    background-color: rgb(165, 42, 65);
+    background-color: rgba(25, 191, 242, 0.619);
     border-radius: 5px;
     padding-top: 20px;
     align-items: center;
     padding-bottom: 2px;
    position: static;
+   
 }
 #descrip p{
-
+    width: 145px;
+    word-wrap: break-word;
     text-align: center;
-    height: 10px;
+    height: fit-content;
 
     color: rgb(42, 165, 91);
     
+}
+#precio::before{
+    content: "$";
+
+
 }
 #precio{
     color: blue;
     margin-top: 10px;
 
 }
-#whatsapp{
+#revisar{
     text-align: center;
     padding: 5px;
-margin-top: 6px;
+    margin-top: 6px;
     width: 100px;
-    height: 20px;
-    background: rgb(4, 255, 0);
+    height: 30px;
+    background: rgb(0, 195, 255);
     border-radius: 10px;
     pointer-events: stroke;
   }
 
+  #revisar:hover{
+ background-color: #1873f2a1 ;
+
+  }
+
 #imagen:hover{
     transition: 0.6s;
-
-    transform: scale(1.05);
+   opacity: 0.8;
+    transform: scale(1.01);
 }
+.formulario_cliente{
 
 
+    margin-left: 40px ;
+  }
+  .formulario_cliente label{
+     margin-top: 10px;
+     display: block;
+  }
+.formulario_cliente input{
+  
+     width: 70%;
+  
+  color: #000;
+     border-radius: 5px;
+    padding: 10px 25px;
+     margin:0 0 10px;
+     display: block;
+  }
+  .cont-whatsapp{
+
+    width: 200px;
+    height: 50px;
+    background: #0099FF;
+    
+    border-radius: 30px  ;
+   margin-left: 100px;
+   margin-top: 20px;
+    transition: all ease 2s;
+  /*;*/
+  }
+ .cont-whatsapp a img{
+  width: 100px;
+    margin-top: 0;
+    animation: anim_what 5s alternate infinite ease
+  }
+ #whatsapp{
+    
+    text-decoration: none;
+   
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+   
+  }
+
+  /*animacion boton whatsapp*/
+  @keyframes anim_what{
+
+    from    { transform: rotate(0deg); }
+    5%      { transform: rotate(10deg); }
+    12.5%   { transform: rotate(-10deg); }
+    21%     { transform: rotate(10deg); }
+    29%     { transform: rotate(-10deg); }
+    37.5%   { transform: rotate(10deg); }
+    46%     { transform: rotate(-10deg); }
+    50%,to  { transform: rotate(0deg); }
+  
+  }
+  .cont-whatsapp a span{
+    
+   
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #171718;
+    transition: all ease 1s;
+    
+  }
+  .cont-whatsapp:hover,  .cont-whatsapp a{
+  
+    transition: all ease 1s;
+    
+    animation-play-state: paused;
+  }
+  .cont-whatsapp:hover   a span{
+    display:  inline-block;
+    color: #c21117;
+   opacity: 1;
+   transition: all ease 1s;
+   box-shadow: 3px solid rgba(0, 174, 255, 0.237);
+  }
 
 main{
     border: 3px solid black;
@@ -239,10 +349,7 @@ main{
     transform: scale(1);
     transition: 0.8s ease all;
   }
-  .pop-up.active~body{
 
-    
-  }
   
   .subscription{
    
@@ -279,6 +386,7 @@ main{
     width: 400px    ;
     height: 500px;
     background: #f2188c;
+    justify-content: center;
   }
   
 .formulario{
@@ -417,6 +525,9 @@ table   tbody td{
 
     width: 100%;
     height:300px;
+}
+#items{
+    width: 95vw;
 }
 .subscription{
    
