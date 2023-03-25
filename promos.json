@@ -1,0 +1,33 @@
+[{
+    "slide":"1",
+    "categoria":"hogar",
+    "nombre":"aceite_bebe",
+    "valor":"120.000",
+    "valorpromo":"120.000",
+    "descripcion":"esta muy buena",
+    "mensaje":"esta muy buena"
+   
+
+},
+{
+    "slide":"2",
+    "categoria":"hogar",
+    "nombre":"cinta aislante",
+    "valor":"120.000",
+    "valorpromo":"120.000",
+    "descripcion":"esta muy buena",
+    "mensaje":"esta muy buena"
+   
+
+},
+{
+    "slide":"3",
+    "categoria":"hogar",
+    "nombre":"aceite_maquina_pequeño",
+    "valor":"120.000",
+    "valorpromo":"120.000",
+    "descripcion":"esta muy buena",
+    "mensaje":"esta muy buena"
+   
+
+}]

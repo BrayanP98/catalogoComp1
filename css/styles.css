@@ -54,32 +54,44 @@ h1{
 
 header{
   
-
-    background-color: yellowgreen;
-    height: 50px;
-    align-items: center;
+display: grid;
+flex-direction: row;
+    background-color: rgb(50, 205, 192);
+    height: fit-content;
+    justify-content: center;
+    min-height: 50px;
+   
+    
+  
 }
 
 
 
 .caja nav {
     font-size: 20px;
-    position: absolute;
-    display: inline-block;
-   
     right: 30%;
     vertical-align: top;
     width: 70%;
-    height: 50px;
+    height: fit-content;
     top:10px;
-   
+    justify-content: center;
     padding: 5px;
+    
+    margin: auto;
+}
+.caja nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
 }
 .caja nav li{
-    
-    border: 2px  solid #c21117;
-    margin-left: 10%;
-    display: inline;
+  text-align: center;
+   width: 100px;
+    border: 1px  solid #c21117;
+    height: 30px;
+   
 }
 .caja nav li a{
 text-decoration: none;
@@ -100,6 +112,7 @@ text-decoration: none;
     color: blue;
     height: 950px;
 }
+
 #items{
 width: 100vw;
 height: fit-content;
@@ -111,6 +124,82 @@ padding-bottom: 30px;
     font-size: 40px;
     margin-top: 20px;
     color: blue;
+}
+@keyframes slide {
+  
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%);   ;}
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%);  ; }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	90% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+#promos{
+  position: relative;
+	display: flex;
+  transition: 0.5s all ease;
+	overflow: hidden;
+  height:  fit-content;
+}
+.cont_slider{
+  animation-delay: 10s;
+
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  transition: 0.10s all ease;
+  height: 25vw;
+  
+  
+}
+
+#img_slider1::before{
+transform: scale(0.5);
+
+}
+#img_slider1,#img_slider2,#img_slider3{
+  width: 50%;
+	vertical-align: top;
+  transition: 0.5s all ease;
+  transform: scale(1);
+}
+
+#caract_product{
+  
+  line-height: 50px;
+background: #0099FF;
+ width:45%;
+height: 100%;
+position: relative;
+
+
+}
+#caract_product .nombre_prod_slide::first-letter{
+
+  text-transform: capitalize;
+}
+#caract_product .valor_prod_slide,#caract_product .valor_prod_slide::before{
+  text-decoration: line-through;
+  content: "$";
+
 }
 #titulo_cat
 {
@@ -138,7 +227,7 @@ color: #000;
 
 .producto{
   
-   
+   overflow: hidden;
     background-size: 150%;
     background-repeat: round;
     width: 150px;
@@ -188,7 +277,7 @@ color: #000;
     word-wrap: break-word;
     text-align: center;
     height: fit-content;
-
+    position: relative;
     color: rgb(42, 165, 91);
     
 }
@@ -221,7 +310,7 @@ color: #000;
 #imagen:hover{
     transition: 0.6s;
    opacity: 0.8;
-    transform: scale(1.01);
+    transform: scale(1.2);
 }
 .formulario_cliente{
 
@@ -522,7 +611,12 @@ table   tbody td{
   and (max-device-width: 928px)
   
 
-{
+{.caja nav ul{
+  
+  justify-content: center;
+  gap: 25px;
+}
+
 
     .cont-map{
         width: 80%;

@@ -1,18 +1,70 @@
   var cats=["ferreteria","hogar","papeleria","varios"]
- 
+
+  function datos_promo(){
+    console.log("en la funcion")
+    const xhttp1=new XMLHttpRequest();
+     
+   
+    xhttp1.open('GET', 'promos.json', true);
+    
+    xhttp1.send();
+    
+    xhttp1.onreadystatechange= function(){
+        if(this.readyState== 4 && this.status == 200){
+
+          var slides=["1","2","3","4"]
+            
+            let datos= JSON.parse(this.responseText)
+           
+            for(let item of datos){
+
+               console.log(item.nombre)
+
+               var img_slider1= document.getElementById("img_slider1");
+               var img_slider2= document.getElementById("img_slider2");
+               var img_slider3= document.getElementById("img_slider3");
+               
+          //   img_slider1.setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
+           // img_slider2.setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
+           if( slides.includes(item.slide)){
+
+          console.log(item.slide)
+            var img_slider= document.getElementById("img_slider"+item.slide);
+           
+
+            img_slider.setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
+            var nombre= document.getElementById("nombre_prom"+item.slide);
+            var descuento= document.getElementById("descuento"+item.slide)
+            var new_valor= document.getElementById("new_valor"+item.slide)
+            var mensaje= document.getElementById("mensaje_promo"+item.slide)
+            nombre.innerHTML=item.nombre
+            descuento.innerHTML=item.valor
+             new_valor.innerHTML=item.valorpromo
+             mensaje.innerHTML=item.mensaje
+        }
+
+            }
+
+        }
+    }
+  }
+
+
     function traerDatos(){
 
         console.log("en la funcion")
         const xhttp=new XMLHttpRequest();
-        xhttp.open('POST', 'PRODUCT.JSON', true);
+         
+       
+       
         xhttp.open('GET', 'PRODUCT.JSON', true);
         xhttp.send();
-           
+        
         xhttp.onreadystatechange= function(){
             if(this.readyState== 4 && this.status == 200){
     
               
-
+                
                 let datos= JSON.parse(this.responseText)
                
              
@@ -187,6 +239,7 @@
         }
        }
        traerDatos() 
+       datos_promo()
 
        document.querySelector("#close_view").addEventListener("click",function(){
 
