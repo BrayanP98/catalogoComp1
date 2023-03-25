@@ -98,7 +98,7 @@
                         cardProd.appendChild(descrip);
                         buton.onclick= function(){
 
-                            document.querySelector("#pop-up").classList("active")
+                            document.querySelector("#pop-up").classList.add("active")
 
                             document.querySelector("#image_prod").setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
                     }
@@ -133,7 +133,7 @@
 
                                 document.querySelector("#pop-up").classList.toggle("active")
 
-                                document.querySelector("#image_prod").setAttribute('src',img.cardProd)
+                                document.querySelector("#image_prod").setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
 
                         }
                         seccion_ferreteria.appendChild(cardProd);
