@@ -1,8 +1,4 @@
-//fetch('http://localhost/mi%20primera%20pagina/PRODUCT.JSON')
-    //.then((response) => response.json())
-   // .then((json) => console.log(json));
-    
-  
+  var cats=["ferreteria","hogar","papeleria","varios"]
  
     function traerDatos(){
 
@@ -23,11 +19,7 @@
                   
 
                 for(let item of datos){
-                   // for( var i=0; i<2;i++){
-
-                 //  for( var i=0; i<11;i++){
-              
-
+                
                     var seccion_hogar= document.getElementById("hogar");
                     var seccion_papeleria= document.getElementById("papeleria");
                     var seccion_ferreteria= document.getElementById("ferreteria");
@@ -41,11 +33,10 @@
                     
                     var imagen = document.createElement("img");
                     imagen.id="imagen";
-                         
-
-                    if(item.categoria=="hogar"){
-
-                        imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
+                    if( cats.includes(item.categoria)){
+                        console.log(item.categoria)
+                  var seccion= document.getElementById(item.categoria);
+                  imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
                         
                     
                         var descrip = document.createElement("div");
@@ -74,9 +65,17 @@
                             btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                     }
                     
-                        seccion_hogar.appendChild(cardProd);
+                        seccion.appendChild(cardProd);
+
+                      }
+
+
+                    if(item.categoria=="hogar"){
+
+                    
+                        
                     }
-                    if(item.categoria=="papeleria" ){
+                  /*  if(item.categoria=="papeleria" ){
 
                         imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
                         
@@ -175,7 +174,7 @@
                                 btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
                         }
                         seccion_varios.appendChild(cardProd);
-                    }
+                    }*/
                        
                     // var nom_prod="producto"+i;
                     // nombre(nom_prod)
