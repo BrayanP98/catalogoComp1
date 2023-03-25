@@ -8,8 +8,10 @@
 
         console.log("en la funcion")
         const xhttp=new XMLHttpRequest();
+        xhttp.open('POST', 'PRODUCT.JSON', true);
         xhttp.open('GET', 'PRODUCT.JSON', true);
         xhttp.send();
+           
         xhttp.onreadystatechange= function(){
             if(this.readyState== 4 && this.status == 200){
     
@@ -17,12 +19,14 @@
 
                 let datos= JSON.parse(this.responseText)
                
+             
+                  
 
                 for(let item of datos){
                    // for( var i=0; i<2;i++){
 
                  //  for( var i=0; i<11;i++){
-    
+              
 
                     var seccion_hogar= document.getElementById("hogar");
                     var seccion_papeleria= document.getElementById("papeleria");

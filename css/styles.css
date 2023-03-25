@@ -74,11 +74,19 @@ nav li{
     top:10px
 }
 .caja{
-    width: 940px;
-
+    width: 95%;
+    height: fit-content;
+    color: rgb(172, 103, 19);
     position: relative;
     margin: 0 auto;
 
+}
+.cont_productos{
+    position: static;
+    display: block;
+    width: 95%;
+    color: blue;
+    height: 950px;
 }
 #items h1{
     font-size: 40px;
@@ -86,8 +94,8 @@ nav li{
     color: blue;
 }
 #items section{
-  width: 90%;
- background-color: rgba(151, 206, 24, 0.275);
+  width: 100%;
+ background-color: rgba(206, 136, 24, 0.275);
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
