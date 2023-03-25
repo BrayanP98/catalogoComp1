@@ -84,7 +84,7 @@ nav li{
 .cont_productos{
     position: static;
     display: block;
-    width: 95%;
+    width: 80%;
     color: blue;
     height: 950px;
 }
@@ -94,7 +94,7 @@ nav li{
     color: blue;
 }
 #items section{
-  width: 100%;
+  width: 95%;
  background-color: rgba(206, 136, 24, 0.275);
   height: fit-content;
   display: flex;
