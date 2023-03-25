@@ -25,9 +25,7 @@ h2:after{
 
 }
 
-h2:first-letter{
-  
-}
+
 img{
  
     width: 100%;
@@ -104,12 +102,22 @@ text-decoration: none;
 }
 #items{
 width: 100vw;
-
+height: fit-content;
+background: #0099ff4d;
+padding-bottom: 30px;
 }
+
 #items h1{
     font-size: 40px;
     margin-top: 20px;
     color: blue;
+}
+#titulo_cat
+{
+font-size: 80px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: #000;
+
 }
 #items section{
   width: 95%;
@@ -122,6 +130,7 @@ width: 100vw;
   padding: 5px;
   margin-top: 20px;
   justify-content: center;
+  
 
 }
 
