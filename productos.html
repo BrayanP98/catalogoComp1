@@ -31,18 +31,20 @@
     </header>
  
     <div class="cont_productos"  id="items"  > 
+        
         <h1 id="titulo_cat">CATALOGO PRODUCTOS EL COMPETIDOR</h1>
         <section >
      <div id="promos">
        <div id="slider1" class="cont_slider">
 
             <img  id="img_slider1" src="" alt="">
+            <img class="img_logo" src="/img/logo.png" alt="" style="width: 17vw; height: 15vw; position:absolute;display: flex; right: 20px;" >
             <div id="caract_product">
           <h1 class="nombre_prod_slide"id="nombre_prom1">nombre</h1>
           <h1 class="valor_prod_slide" id="descuento1">DTO</h1>
           <h1 id="new_valor1">$12.000</h1>
-          <h1 id="mensaje_promo1">solo por esta semana</h1>
-
+          <p class="mensaje_prod_slide" id="mensaje_promo1">solo por esta semana</p>
+                  
             </div>
 
        </div>
@@ -52,8 +54,8 @@
         <div id="caract_product">
       <h1 class="nombre_prod_slide" id="nombre_prom2">nombre</h1>
       <h1 class="valor_prod_slide"id="descuento2">DTO</h1>
-      <h1 id="new_valor2">$12.000</h1>
-      <h1 id="mensaje_promo2">solo por esta semana</h1>
+      <h1 id="new_valor2"><a href="solo por hoy"></a></h1>
+      <h1 class="mensaje_prod_slide" id="mensaje_promo2">solo por esta semana</h1>
 
         </div>
         
@@ -66,7 +68,20 @@
   <h1 class="nombre_prod_slide"id="nombre_prom3">nombre</h1>
   <h1 class="valor_prod_slide"id="descuento3">DTO</h1>
   <h1 id="new_valor3">$12.000</h1>
-  <h1 id="mensaje_promo3">solo por esta semana</h1>
+  <h1 class="mensaje_prod_slide" id="mensaje_promo3">solo por esta semana</h1>
+
+    </div>
+    
+
+</div>
+<div id="slider4"  class="cont_slider">
+
+    <img id="img_slider4" src="" alt="">
+    <div id="caract_product">
+  <h1 class="nombre_prod_slide"id="nombre_prom4">nombre</h1>
+  <h1 class="valor_prod_slide"id="descuento4">DTO</h1>
+  <h1 id="new_valor4">$12.000</h1>
+  <h1 class="mensaje_prod_slide" id="mensaje_prom4">solo por esta semana</h1>
 
     </div>
     
@@ -177,7 +192,7 @@ return nombre_prod[nombre];
       
      </script>
 
-     
+
  <div class="pop-up" id="pop-up">
     <button id="close_view"> X salir</button>
   <div class="pop-wrap" id="pop-wrap">
@@ -229,9 +244,147 @@ return nombre_prod[nombre];
   </div>
 
   </div>
-       
-<script src="ajax.js"></script> 
+  
+<style>
+.wrapper {
+  position: fixed;
+  z-index: 9999;
+  top: 65%;
+  margin-left:85%; 
+ 
+  padding: 5px;
+  right: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left:50px;
+  margin-top: 1%;
+  height: 0px;
+  width:50px;
+  float: right;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+.wrapper img {
+  height: auto;
+  width: 100%;
+  
+  
+}
+.wrapper .icon {
+  
+  float: left;
+  visibility: visible;
+  position: relative;
+  background: #fdf9f900;
+  border-radius: 50%;
+  bottom: auto;
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
+.wrapper .tooltip {
+ 
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ 
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,.wrapper .twitter:hover
+,.wrapper .instagram:hover{
+  transform: scale(1.2);
+}
+.wrapper .facebook{
+
+   right: 10px;
+   transform: scale(1.1);
+}
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+ 
+  background: #0566e4e5;
+  
+}
+
+
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #62f47aee;
+  
+  color: #fff;
+}
+
+
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405ee9;
+  
+  color: #fff;
+ 
+}
+
+</style>
+<script src="ajax.js"></script> 
+<ul class="wrapper">
+    <li class="icon facebook">
+        <a href="" style="text-decoration: none;">  <img src="img/facebook1.png"></img></a>
+        <span class="tooltip">Facebook</span>
+        <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+        <a href="" style="text-decoration: none;"> <img src="img/whatsapp.png"></img></a>
+        <span class="tooltip">whatsapp</span>
+        <span><i class="fab fa-twitter"></i></span>
+    </li>
+  <li class="icon instagram">
+    <a href="" style="text-decoration: none;"> <img src="img/instagram.png"></img></a>
+      <span class="tooltip">Instagram</span>
+        <span><i class="fab fa-instagram"></i></span>
+    </li>
+</ul>
       
     
 </body>
