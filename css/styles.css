@@ -710,9 +710,9 @@ table   tbody td{
     
 
   }
-  #caract_product p{
+  .mensaje_prod_slide{
     font-size: 20px;
-    color: #c21117;
+  
     margin-top: 0px;
     white-space: pre-line;
     gap: 0;
