@@ -20,9 +20,7 @@
 
                console.log(item.nombre)
 
-               var img_slider1= document.getElementById("img_slider1");
-               var img_slider2= document.getElementById("img_slider2");
-               var img_slider3= document.getElementById("img_slider3");
+              
                
           //   img_slider1.setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
            // img_slider2.setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
@@ -109,13 +107,56 @@
                         descrip.appendChild(buton); 
                         cardProd.appendChild(imagen);
                         cardProd.appendChild(descrip);
-                        buton.onclick= function(){
-                            
+                       
+                        buton.onclick= function view(){
+                          var nombre_cliente=document.querySelector("#nombre_cliente1");
+                          var email_cliente=document.querySelector("#email_cliente");
+                         var cant_prod=document.querySelector("#cant_prod");
+                         cant_prod.style.border="2px solid black";
+                                nombre_cliente.style.border="2px solid black";
+                          btn_whatsap.removeAttribute('href');
+                          
+                          
                             document.querySelector("#pop-up").classList.add("active")
-
+                          
+                            document.querySelector("#nombre_view").innerHTML=item.nombre
+                            document.querySelector("#valor_view").innerHTML=item.valor
+                            document.querySelector("#desccripcion_view").innerHTML=item.descripcion
                             document.querySelector("#image_prod").setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
-                            btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola buen dia, Quiesiera hecer un pedido de"+item.nombre+"🙏")
-                    }
+                          
+                            btn_whatsap.onclick= function(){
+
+                           
+                              nombre_cliente.addEventListener('keydown', (event) => {
+                                btn_whatsap.style.cursor="pointer"
+                                
+                            })
+                              if(nombre_cliente.value=="" && cant_prod.value==0){
+                                btn_whatsap.removeAttribute('href');
+                                cant_prod.style.border="2px solid red";
+                                nombre_cliente.style.border="2px solid red"
+                                nombre_cliente.setAttribute('placeholder', "ingrese nombre porfavor");
+                                btn_whatsap.style.cursor="not-allowed"
+                              }else{
+                                
+                                cant_prod.style.border="2px solid black";
+                                nombre_cliente.style.border="2px solid black"
+                                nombre_cliente.setAttribute('placeholder', "");
+                                btn_whatsap.style.cursor="pointer"
+                                //nombre_cliente.setAttribute('placeholder', )
+                                btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola, minombre es"+" "+nombre_cliente.value+"%0A %0A"+"Quiesiera hecer un pedido de "+cant_prod.value+" "+"de"+" "+item.nombre+"🙏"+"%0A %0A"+"Mi correo es:"+" "+email_cliente.value)
+                                cant_prod.value=value=""
+                                nombre_cliente.value=""
+                                email_cliente.value=""
+                               //view()
+                               btn_whatsap.style.cursor="not-allowed"
+                              }
+                              
+                            }
+                         
+                    
+                    
+                          }
                     
                         seccion.appendChild(cardProd);
 
