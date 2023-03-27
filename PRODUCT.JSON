@@ -4,7 +4,7 @@
     "categoria":"hogar",
     "nombre":"aceite_bebe",
     "valor":"120.000",
-    "descripcion":"esta muy buena"
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
    
 
 },
@@ -12,7 +12,7 @@
     "categoria":"papeleria",
    "nombre":"cinta aislante",
    "valor":"120.000",
-   "descripcion":"esta muy buena",
+   "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt.",
    "img":"imagenes_competidor/producto3.png"
 
 },

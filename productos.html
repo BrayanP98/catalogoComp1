@@ -55,7 +55,7 @@
       <h1 class="nombre_prod_slide" id="nombre_prom2">nombre</h1>
       <h1 class="valor_prod_slide"id="descuento2">DTO</h1>
       <h1 id="new_valor2"><a href="solo por hoy"></a></h1>
-      <p class="mensaje_prod_slide" id="mensaje_promo1">solo por esta semana</p>
+      <p class="mensaje_prod_slide" id="mensaje_promo2">solo por esta semana</p>
 
         </div>
         
@@ -68,7 +68,7 @@
   <h1 class="nombre_prod_slide"id="nombre_prom3">nombre</h1>
   <h1 class="valor_prod_slide"id="descuento3">DTO</h1>
   <h1 id="new_valor3">$12.000</h1>
-  <p class="mensaje_prod_slide" id="mensaje_promo1">solo por esta semana</p>
+  <p class="mensaje_prod_slide" id="mensaje_promo3">solo por esta semana</p>
 
     </div>
     
@@ -81,7 +81,7 @@
   <h1 class="nombre_prod_slide"id="nombre_prom4">nombre</h1>
   <h1 class="valor_prod_slide"id="descuento4">DTO</h1>
   <h1 id="new_valor4">$12.000</h1>
-  <p class="mensaje_prod_slide" id="mensaje_promo1">solo por esta semana</p>
+  <p class="mensaje_prod_slide" id="mensaje_promo4">solo por esta semana</p>
 
     </div>
     
@@ -206,18 +206,23 @@ return nombre_prod[nombre];
 
         </div>
         <div id="info_prod">
+          <h1 id="nombre_view">nombre prod</h1>
+          <h1 id="valor_view"></h1>
+          <h2 id="title_descript">Descipcion</h2>
+          <p id="desccripcion_view">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus 
+            odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt.</p>
 
 
         </div>
         <div id="formulario_env">
-
+          <h1 id="title_form">Datos Pedido </h1>
             <form action=""  class="formulario_cliente">
-
+                 
                 <label for="nombre">Nombre*</label>
-                <input type="text"  id="nombre_cliente" required>
+                <input type="text"  id="nombre_cliente1" required>
     
                 <label for="email">Email</label>
-                <input type="email"  id="email_cliente" placeholder="email@dominio.com" required>   
+                <input type="text"  id="email_cliente" placeholder="email@dominio.com" required>   
     
                 <label for="contacto">Cantidad producto*</label>
     
@@ -226,7 +231,7 @@ return nombre_prod[nombre];
                 
             </form>
             <div class="cont-whatsapp">
-                <a type="submit" href="" target="_blank" id="whatsapp" style="width: 200px; height: 50px;"> <img src="/img/whatsapp.png" alt="" style="width: 50px; height: 50px; ">
+                <a   target="_blank" id="whatsapp" style="width: 200px; height: 50px;"> <img src="/img/whatsapp.png" alt="" style="width: 50px; height: 50px; ">
                 <span>Hacer Pedido</span>
                 </a>
             </div>
@@ -376,7 +381,7 @@ return nombre_prod[nombre];
         <span><i class="fab fa-facebook-f"></i></span>
     </li>
     <li class="icon twitter">
-        <a href="" style="text-decoration: none;"> <img src="img/whatsapp.png"></img></a>
+        <a target="_blank" href="https://wa.me/573026055289?text= Hola, quiciera charlar"style="text-decoration: none;"> <img src="img/whatsapp.png"></img></a>
         <span class="tooltip">whatsapp</span>
         <span><i class="fab fa-twitter"></i></span>
     </li>
