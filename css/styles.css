@@ -114,7 +114,7 @@ text-decoration: none;
 #items{
 width: 100vw;
 height: fit-content;
-
+margin-top :100px;
 padding-bottom: 30px;
 }
 
