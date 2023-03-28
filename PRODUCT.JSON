@@ -1,7 +1,7 @@
 [
 {
 
-    "categoria":"hogar",
+    "categoria":"aseo personal",
     "nombre":"aceite_bebe",
     "valor":"120.000",
     "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
@@ -9,8 +9,105 @@
 
 },
 {
-    "categoria":"papeleria",
-   "nombre":"cinta aislante",
+
+    "categoria":"aseo personal",
+    "nombre":"aceite de coco",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"aseo personal",
+    "nombre":"aceite cebolla",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},{
+
+    "categoria":"aseo personal",
+    "nombre":"aceite argan",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},{
+
+    "categoria":"aseo personal",
+    "nombre":"hilos de seda",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"aseo personal",
+    "nombre":"aceite almendras",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica apio",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica cidron",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica manzanilla",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"salud",
+    "nombre":"algodon 20-gr",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"salud",
+    "nombre":"algodon 5-gr",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica yerbabuena",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+    "categoria":"ferreteria",
+   "nombre":"cinta teflon",
    "valor":"120.000",
    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt.",
    "img":"imagenes_competidor/producto3.png"
@@ -33,14 +130,14 @@
 
 },
 {
-    "categoria":"varios",
+    "categoria":"ferreteria",
    "nombre":"aceite_maquina_grande",
    "valor":"120.000",
    "descripcion":"esta muy buena"
    
 },
 {
-    "categoria":"varios",
+    "categoria":"ferreteria",
    "nombre":"aceite_maquina_pequeño",
    "valor":"120.000",
    "descripcion":"esta muy buena"

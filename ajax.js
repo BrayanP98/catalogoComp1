@@ -1,5 +1,6 @@
-  var cats=["ferreteria","hogar","papeleria","varios"]
-
+  var cats=["ferreteria","hogar","papeleria","varios", "aseo personal","salud","alimentos"]
+ 
+     
   function datos_promo(){
     console.log("en la funcion")
     const xhttp1=new XMLHttpRequest();
@@ -30,7 +31,7 @@
             var img_slider= document.getElementById("img_slider"+item.slide);
            
 
-            img_slider.setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
+            img_slider.setAttribute('src',"img/imagenes_competidor/"+item.nombre+".png")
             var nombre= document.getElementById("nombre_prom"+item.slide);
             var descuento= document.getElementById("descuento"+item.slide)
             var new_valor= document.getElementById("new_valor"+item.slide)
@@ -86,7 +87,7 @@
                     if( cats.includes(item.categoria)){
                         console.log(item.categoria)
                   var seccion= document.getElementById(item.categoria);
-                  imagen.setAttribute('src',"imagenes_competidor/"+item.nombre+".png");
+                  imagen.setAttribute('src',"img/imagenes_competidor/"+item.nombre+".png");
                         
                     
                         var descrip = document.createElement("div");
@@ -109,6 +110,7 @@
                         cardProd.appendChild(descrip);
                        
                         buton.onclick= function view(){
+                          
                           var nombre_cliente=document.querySelector("#nombre_cliente1");
                           var email_cliente=document.querySelector("#email_cliente");
                          var cant_prod=document.querySelector("#cant_prod");
@@ -122,8 +124,8 @@
                             document.querySelector("#nombre_view").innerHTML=item.nombre
                             document.querySelector("#valor_view").innerHTML=item.valor
                             document.querySelector("#desccripcion_view").innerHTML=item.descripcion
-                            document.querySelector("#image_prod").setAttribute('src',"imagenes_competidor/"+item.nombre+".png")
-                          
+                            document.querySelector("#image_prod").setAttribute('src',"img/imagenes_competidor/"+item.nombre+".png")
+                            
                             btn_whatsap.onclick= function(){
 
                            
@@ -132,24 +134,31 @@
                                 
                             })
                               if(nombre_cliente.value=="" && cant_prod.value==0){
-                                btn_whatsap.removeAttribute('href');
+                               btn_whatsap.removeAttribute('href');
                                 cant_prod.style.border="2px solid red";
                                 nombre_cliente.style.border="2px solid red"
                                 nombre_cliente.setAttribute('placeholder', "ingrese nombre porfavor");
                                 btn_whatsap.style.cursor="not-allowed"
                               }else{
                                 
+                                btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola, minombre es"+" "+nombre_cliente.value+"%0A %0A"+"Quiesiera hecer un pedido de "+cant_prod.value+" "+"de"+" "+item.nombre+"🙏"+"%0A %0A"+"Mi correo es:"+" "+email_cliente.value);
+                                //var loader=document.querySelector("#loader")
                                 cant_prod.style.border="2px solid black";
                                 nombre_cliente.style.border="2px solid black"
                                 nombre_cliente.setAttribute('placeholder', "");
                                 btn_whatsap.style.cursor="pointer"
-                                //nombre_cliente.setAttribute('placeholder', )
-                                btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola, minombre es"+" "+nombre_cliente.value+"%0A %0A"+"Quiesiera hecer un pedido de "+cant_prod.value+" "+"de"+" "+item.nombre+"🙏"+"%0A %0A"+"Mi correo es:"+" "+email_cliente.value)
-                                cant_prod.value=value=""
-                                nombre_cliente.value=""
-                                email_cliente.value=""
-                               //view()
-                               btn_whatsap.style.cursor="not-allowed"
+                              //  loader.style.opacity="1"
+                               // setTimeout(() => {
+                                  
+                            
+                             //   }, 4000);
+                              nombre_cliente.setAttribute('placeholder', )
+                             
+                              cant_prod.value=value=""
+                               nombre_cliente.value=""
+                              email_cliente.value=""
+                              
+                              btn_whatsap.style.cursor="not-allowed"
                               }
                               
                             }
@@ -161,7 +170,7 @@
                         seccion.appendChild(cardProd);
 
                       }
-
+                     
 
                     if(item.categoria=="hogar"){
 
@@ -289,8 +298,16 @@
     
    });
    
-   
-   
+   function disable() {
+    // To get the scroll position of current webpage
+    TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+    LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+    
+    // if scroll happens, set it to the previous value
+    window.onscroll = function() {
+    window.scrollTo(LeftScroll, TopScroll);
+            };
+    }
     
         
 
