@@ -493,10 +493,17 @@ main{
     z-index: 2;
   }
   .pop-up button{
-
-    float: right;
-    margin-right: 80px;
-    margin-top: 8px;
+   position:absolute;
+   z-index: 33;
+    top: -0px;
+    right: -9px;
+    width: 80px;
+    height: 30px;
+   color: #faf7f6;
+   background: red;
+   border: 0;
+   font-size: 20px;
+   border-radius: 0px 15px 0px 0px;
   }
   
   .pop-wrap{
@@ -537,9 +544,11 @@ main{
     margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
-   
+   top: 30px;
+   right: 150px;
+   left: 10px;
     position: relative;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     justify-content: center;
     
