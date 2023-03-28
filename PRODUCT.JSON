@@ -80,6 +80,59 @@
 },
 {
 
+    "categoria":"alimentos",
+    "nombre":"aromatica toronjil",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica limonaria",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica frutos rojos",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica frutos amarillos",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+
+},
+{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica frutos arandanos",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+    
+},{
+
+    "categoria":"alimentos",
+    "nombre":"aromatica jengibre y miel",
+    "valor":"120.000",
+    "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure maiores fuga necessitatibus illum aliquid, possimus odio nesciunt. In tenetur harum ad soluta nostrum illo dolor assumenda dolorem numquam deserunt."
+   
+  
+},
+{
+
     "categoria":"salud",
     "nombre":"algodon 20-gr",
     "valor":"120.000",
