@@ -29,8 +29,8 @@
 
           console.log(item.slide)
             var img_slider= document.getElementById("img_slider"+item.slide);
-           
-
+            var hoja_slider= document.querySelector("#promos")
+            promos
             img_slider.setAttribute('src',"img/imagenes_competidor/"+item.nombre+".png")
             var nombre= document.getElementById("nombre_prom"+item.slide);
             var descuento= document.getElementById("descuento"+item.slide)
@@ -40,6 +40,65 @@
             descuento.innerHTML=item.valor
              new_valor.innerHTML=item.valorpromo
              mensaje.innerHTML=item.mensaje
+            
+             img_slider.onclick= function(){
+
+
+              document.querySelector("#pop-up").classList.add("active")
+
+              var btn_whatsap= document.getElementById("whatsapp");
+              var nombre_cliente=document.querySelector("#nombre_cliente1");
+              var email_cliente=document.querySelector("#email_cliente");
+              var cant_prod=document.querySelector("#cant_prod");
+              cant_prod.style.border="2px solid black";
+              nombre_cliente.style.border="2px solid black";
+               btn_whatsap.removeAttribute('href');
+                          
+                          
+                
+                          
+                document.querySelector("#nombre_view").innerHTML=item.nombre
+                document.querySelector("#valor_view").innerHTML=item.valor
+                document.querySelector("#desccripcion_view").innerHTML=item.descripcion
+                 document.querySelector("#image_prod").setAttribute('src',"img/imagenes_competidor/"+item.nombre+".png")
+               
+                 btn_whatsap.onclick= function(){
+
+                           
+              
+                    
+                
+                  if(nombre_cliente.value=="" && cant_prod.value==0){
+                   btn_whatsap.removeAttribute('href');
+                    cant_prod.style.border="2px solid red";
+                    nombre_cliente.style.border="2px solid red"
+                    nombre_cliente.setAttribute('placeholder', "ingrese nombre porfavor");
+                    btn_whatsap.style.cursor="not-allowed"
+                  }else{
+                    
+                    btn_whatsap.setAttribute('href', "https://wa.me/573026055289?text= Hola, minombre es"+" "+nombre_cliente.value+"%0A %0A"+"Quiesiera hecer un pedido de "+cant_prod.value+" "+"de"+" "+item.nombre+"🙏"+"%0A %0A"+"Mi correo es:"+" "+email_cliente.value);
+                    //var loader=document.querySelector("#loader")
+                    cant_prod.style.border="2px solid black";
+                    nombre_cliente.style.border="2px solid black"
+                    nombre_cliente.setAttribute('placeholder', "");
+                    btn_whatsap.style.cursor="pointer"
+                  //  loader.style.opacity="1"
+                   // setTimeout(() => {
+                      
+                
+                 //   }, 4000);
+                  nombre_cliente.setAttribute('placeholder', )
+                 
+                  cant_prod.value=value=""
+                   nombre_cliente.value=""
+                  email_cliente.value=""
+                  
+                  btn_whatsap.style.cursor="not-allowed"
+                  }
+                  
+                }
+              
+             }
         }
 
             }
